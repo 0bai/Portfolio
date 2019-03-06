@@ -1,6 +1,27 @@
-body
-  padding: 50px
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+@import "header"
+@import "footer"
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
 
-a
-  color: #00B7FF
+body
+  height: 100vh
+  width: 100%
+  font-family: 'Montserrat','Open-Sans', "Lucida Grande", Helvetica, Arial, sans-serif
+
+
+
+
+section
+  width: 100%
+  height: 100%
+  margin: 0
+  padding: 0
+  display: flex
+  flex-direction: column
+  align-items: center
+
+
+section:not(.hero):nth-child(even)
+  background-color: #f5f5f5
