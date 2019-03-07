@@ -9,7 +9,7 @@ $(function () {
 		active.toggle();
 		var i = Number(active.attr('id').split('-')[ 1 ]) - 1;
 		i = i === 0 ? numSlides : i;
-		$('#slide-' + i).fadeIn(1000);
+		$('#slide-' + i).fadeIn(1500);
 	});
 	
 	$('#right').click(function () {
@@ -20,6 +20,6 @@ $(function () {
 		active.toggle();
 		var i = Number(active.attr('id').split('-')[ 1 ]) + 1;
 		i = i === numSlides + 1 ? 1 : i;
-		$('#slide-' + i).fadeIn(1000);
+		$('#slide-' + i).fadeIn(1500);
 	});
 });

@@ -63,6 +63,11 @@
           margin: 0 10%;
         }
       }
+
+      @media (max-width: 800px) {
+        text-align: center;
+        flex-direction: column;
+      }
     }
 
     img {
