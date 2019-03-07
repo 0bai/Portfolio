@@ -14,16 +14,16 @@
     font-weight: 100; }
 
 @media (max-width: 640px) {
-  #header {
-    font-size: 14px;
-    overflow-wrap: break-word;
-  }
+    #header {
+        font-size: 14px;
+        overflow-wrap: break-word;
+    }
 }
 
 @media (max-height: 540px) {
-  #header .down {
-    display: none;
-  }
+    #header .down {
+        display: none;
+    }
 }
 
 #header .down {
@@ -32,34 +32,34 @@
     left: 47%;
     top: 90%;
     width: 5%;
-  color: #eeeeee;
+    color: #eeeeee;
 }
 
 #header .slide {
-  max-width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  white-space: nowrap;
-  animation: fadein 30s infinite;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    white-space: nowrap;
+    animation: fadein 30s infinite;
 }
 
 @media (max-width: 510px) {
-  #header .slide h1 {
-    font-size: 18px;
-    white-space: normal;
-    min-height: 100px;
-  }
+    #header .slide h1 {
+        font-size: 18px;
+        white-space: normal;
+        min-height: 100px;
+    }
 }
 
 #header .slide h1 {
-  letter-spacing: 16px;
+    letter-spacing: 16px;
 }
 
 #header .slide h1 p {
-  margin: 2px 0;
+    margin: 2px 0;
 }
 
 @keyframes fadein {
@@ -69,34 +69,34 @@
     opacity: 0; } }
 
 #header .slide:nth-child(1) {
-  animation-delay: 0s;
+    animation-delay: 0s;
 }
 
 #header .slide:nth-child(2) {
-  animation-delay: 5s;
+    animation-delay: 5s;
 }
 
 #header .slide:nth-child(3) {
-  animation-delay: 10s;
+    animation-delay: 10s;
 }
 
 #header .slide:nth-child(4) {
-  animation-delay: 15s;
+    animation-delay: 15s;
 }
 
 #header .slide:nth-child(5) {
-  animation-delay: 20s;
+    animation-delay: 20s;
 }
 
 #header .slide:nth-child(6) {
-  animation-delay: 25s;
+    animation-delay: 25s;
 }
 
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #eeeeee;
+    background-color: #eeeeee;
 }
   footer #social {
     font-size: 50px;
@@ -127,10 +127,10 @@ footer {
       border: white solid 10px;
       border-radius: 50%; }
 
-@media (max-height: 400px) {
-  #about #intro #personal-img {
-    display: none;
-  }
+@media screen and (max-height: 400px), screen and (max-width: 510px) {
+    #about #intro #personal-img {
+        display: none;
+    }
 }
     #about #intro #summary {
       display: flex;
@@ -142,10 +142,10 @@ footer {
       justify-content: space-between; }
 
 @media (max-width: 640px) {
-  #about #intro #summary {
-    text-align: center;
-    justify-content: space-around;
-  }
+    #about #intro #summary {
+        text-align: center;
+        justify-content: space-around;
+    }
 }
       #about #intro #summary #honors {
         font-size: 1rem;
@@ -156,15 +156,15 @@ footer {
         align-items: center; }
 
 @media (max-height: 450px) {
-  #about #intro #summary #honors {
-    display: none;
-  }
+    #about #intro #summary #honors {
+        display: none;
+    }
 }
 
 @media (max-width: 640px) {
-  #about #intro #summary #honors {
-    display: none;
-  }
+    #about #intro #summary #honors {
+        display: none;
+    }
 }
         #about #intro #summary #honors .badge {
           text-align: center;
@@ -172,18 +172,18 @@ footer {
           height: 100%;
           display: flex;
           flex-direction: column;
-          justify-content: space-around;
+            justify-content: space-around;
         }
         #about #intro #summary #honors img {
           padding: 0;
           width: 90%;
-          height: 30%;
+            height: 30%;
         }
 
 #projects {
   height: 100%;
   width: 100%;
-  position: relative;
+    position: relative;
 }
 
 #projects .controller {
@@ -192,73 +192,73 @@ footer {
     padding: 0;
     position: absolute;
     bottom: 50%;
-  font-size: 50px;
+    font-size: 50px;
 }
 
 #projects #left {
-  left: 0;
+    left: 0;
 }
 
 #projects #right {
-  right: 0;
+    right: 0;
 }
 
-#projects .project-slides:hover .caption {
+#projects .project-slides:hover .caption, #projects .project-slides:active .caption {
     visibility: visible;
     opacity: 1;
-  transition: visibility .7s 100ms, opacity .7s 300ms ease-in;
+    transition: visibility .7s 100ms, opacity .7s 300ms ease-in;
 }
 
 #projects .hidden {
-  display: none;
+    display: none;
 }
 
 #projects .project-slides {
     width: 100%;
     height: 100%;
     z-index: 2;
-  position: relative;
+    position: relative;
 }
 
 #projects .project-slides .caption {
-  display: flex;
-  visibility: hidden;
-  margin: 0;
-  padding: 0;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #eeeeee;
-  height: 10%;
-  position: relative;
-  bottom: 10%;
-  z-index: 1;
-  opacity: 0;
+    display: flex;
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #eeeeee;
+    height: 10%;
+    position: relative;
+    bottom: 10%;
+    z-index: 1;
+    opacity: 0;
 }
 
 #projects .project-slides .caption .links {
-  display: flex;
-  font-size: 30px;
-  margin: 0;
-  padding: 0;
+    display: flex;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
 }
 
 #projects .project-slides .caption .links a {
-  margin: 0 10%;
+    margin: 0 10%;
 }
 
 @media (max-width: 800px) {
-  #projects .project-slides .caption {
-    text-align: center;
-    flex-direction: column;
-  }
+    #projects .project-slides .caption {
+        text-align: center;
+        flex-direction: column;
+    }
 }
 
 #projects .project-slides img {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  z-index: -999;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: -999;
 }
 
 * {
@@ -273,7 +273,7 @@ body {
 
 body a, body a:visited, body a:link, body a:hover, body a:active {
     text-decoration: none;
-  color: #111214;
+    color: #111214;
 }
 
 section {
