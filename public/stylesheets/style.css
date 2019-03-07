@@ -11,6 +11,15 @@
   #header #header * {
     font-weight: 100; }
 
+#header .down {
+    font-size: 60px;
+    position: absolute;
+    left: 47%;
+    top: 90%;
+    width: 5%;
+    color: #eeeeee;
+}
+
 #text-effect-wrapper {
   display: block; }
 
@@ -23,12 +32,6 @@
   opacity: 0;
   white-space: nowrap;
   animation: fadein 25s infinite; }
-
-.down {
-  font-size: 60px;
-  position: absolute;
-  left: 48%;
-  top: 85%; }
 
 .slide:nth-child(1) {
   animation-delay: 0s; }
@@ -3614,15 +3617,14 @@ span.text-effect {
 footer {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+    align-items: center;
+    background-color: #eeeeee;
+}
   footer #social {
     font-size: 50px;
     margin: 20px; }
   footer p {
     margin: 10px; }
-  footer a, footer a:visited, footer a:link, footer a:hover, footer a:active {
-    text-decoration: none;
-    color: #111214; }
 
 #about {
   margin-top: 50px;
@@ -3635,7 +3637,7 @@ footer {
     font-size: 2.5em;
     font-weight: 400; }
   #about #intro {
-    text-align: justify-all;
+      text-align: justify;
     margin-top: 5%;
     display: flex;
     justify-content: space-around;
@@ -3658,18 +3660,99 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        height: 60%;
+          height: 50%;
         align-items: center; }
         #about #intro #summary #honors .badge {
-          width: 29%;
+            text-align: center;
+            width: 28%;
           height: 100%;
           display: flex;
           flex-direction: column;
-          justify-content: space-between; }
+            justify-content: space-around;
+        }
         #about #intro #summary #honors img {
           padding: 0;
-          width: 100%;
-          height: 40%; }
+            width: 90%;
+            height: 30%;
+        }
+
+#projects {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#projects .controller {
+    z-index: 10;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    bottom: 50%;
+    font-size: 50px;
+}
+
+#projects #left {
+    left: 0;
+}
+
+#projects #right {
+    right: 0;
+}
+
+#projects .transition {
+    transition: visibility .7s 100ms, opacity .7s 300ms ease-in;
+}
+
+#projects .project-slides:hover .caption {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility .7s 100ms, opacity .7s 300ms ease-in;
+}
+
+#projects .hidden {
+    display: none;
+}
+
+#projects .project-slides {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+#projects .project-slides .caption {
+    display: flex;
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #eeeeee;
+    height: 10%;
+    position: relative;
+    bottom: 10%;
+    z-index: 1;
+    opacity: 0;
+}
+
+#projects .project-slides .caption .links {
+    display: flex;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+#projects .project-slides .caption .links a {
+    margin: 0 10%;
+}
+
+#projects .project-slides img {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: -999;
+}
 
 * {
   margin: 0;
@@ -3680,6 +3763,11 @@ body {
   height: 100vh;
   width: 100%;
   font-family: 'Montserrat','Open-Sans', "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+body a, body a:visited, body a:link, body a:hover, body a:active {
+    text-decoration: none;
+    color: #111214;
+}
 
 section {
   width: 100%;

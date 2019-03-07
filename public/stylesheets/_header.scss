@@ -14,6 +14,14 @@
     font-weight: 100;
   }
 
+  .down {
+    font-size: 60px;
+    position: absolute;
+    left: 47%;
+    top: 90%;
+    width: 5%;
+    color: #eeeeee;
+  }
 }
 
 #text-effect-wrapper {
@@ -31,12 +39,6 @@
   animation: fadein 25s infinite;
 }
 
-.down {
-  font-size: 60px;
-  position: absolute;
-  left:48%;
-  top:85%;
-}
 
 .slide:nth-child(1) {
   animation-delay: 0s;
